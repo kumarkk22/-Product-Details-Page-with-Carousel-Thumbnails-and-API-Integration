@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="product-container">
+    <section class="product-carousel">
+      <div class="main-image">
+        <img id="main-image" src="" alt="Product Image">
+      </div>
+      <div class="thumbnails-container">
+        <button id="prev" class="carousel-button">←</button>
+        <div class="thumbnails">
+        </div>
+        <button id="next" class="carousel-button">→</button>
+      </div>
+    </section>
+    
+    <section class="product-info">
+      <h1 id="product-name">Product Name</h1>
+      <p id="product-price">$99.99</p>
+      <p id="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+      <div class="variant-selector">
+        <label for="variant">Select Size:</label>
+        <select id="variant">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+
+      <div class="quantity-selector">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1">
+      </div>
+      
+      <button id="add-to-cart" class="btn">Add to Cart</button>
+      <p id="confirmation-message" class="confirmation-message" style="display:none;">Item added to cart!</p>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
